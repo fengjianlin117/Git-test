@@ -1,0 +1,125 @@
+# ==========================
+# Unity 基本忽略规则
+# ==========================
+
+# Unity 生成的文件夹（Library/、Logs/、Temp/）
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Visual Studio / Rider / JetBrains 生成的文件
+.vs/
+.idea/
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+*.obj
+
+# 预编译头
+*.pch
+
+# Unity 生成的 **自动 GUID 映射文件**（重要！）
+/Assets/StreamingAssets/*.meta
+
+# 脚本调试数据库
+*.mdb
+*.ilk
+*.ipch
+*.aps
+*.rsuser
+*.sdf
+*.tlog
+*.log
+*.vscode/
+
+# Player 编译生成的文件
+*.unityproj
+*.manifest
+*.unitypackage
+*.asset
+*.exe
+*.dll
+*.bat
+*.map
+*.pri
+*.exp
+
+# MacOS 相关
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows 相关
+Thumbs.db
+Desktop.ini
+
+# Ignore crash reports
+CrashReports/
+
+# Ignore Unity Package Manager 的缓存
+Packages/*
+!Packages/manifest.json
+!Packages/packages-lock.json
+
+# Ignore ProjectSettings（部分可选）
+# 通常 `ProjectSettings/ProjectVersion.txt` 应该提交，以确保团队 Unity 版本一致
+# 但其他 ProjectSettings 文件可能包含个人设置，可以选择忽略
+ProjectSettings/EditorBuildSettings.asset
+ProjectSettings/ProjectSettings.asset
+
+# 可选：如果使用 Unity Cloud Build，以下目录可以忽略
+[Uu]ser[Ss]ettings/
+
+# 可选：如果使用 Addressables，忽略以下
+/Assets/AddressableAssetsData/*.bin
+/Assets/AddressableAssetsData/*.hash
+
+# ==========================
+# 如果你使用 Git LFS（大文件存储）
+# ==========================
+# Unity 场景和预制体二进制文件，适合存入 Git LFS
+# 但要 **确保团队所有人都安装了 Git LFS**
+# 否则 `git clone` 时会出问题
+*.psd
+*.tga
+*.tif
+*.tiff
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.exr
+*.mp4
+*.mov
+*.avi
+*.wav
+*.mp3
+*.ogg
+*.flac
+*.fbx
+*.obj
+*.blend
+*.zip
+*.rar
+*.7z
+*.gz
+*.tgz
+*.tar
+*.iso
+*.vsconfig
